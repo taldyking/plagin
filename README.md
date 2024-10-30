@@ -1,65 +1,34 @@
-# krasavchik README
+# Плагин Hello World
 
-This is the README for your extension "krasavchik". After writing up a brief description, we recommend including the following sections.
+### Автор:  Талдыкин Григорий Александрович, группа М3120
 
-## Features
+## Описание
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Этот плагин предназначен для демонстрации базового принципа работы с API выбранной IDE и вывода сообщения "!!!КРАСАВЧИК!!!" в консоль. 
 
-For example if there is an image subfolder under your extension project workspace:
+## Возможности
 
-\!\[feature X\]\(images/feature-x.png\)
+- Выводит сообщение "!!!КРАСАВЧИК!!!" в консоль IDE.
+- Демонстрирует основу архитектуры плагина и его взаимодействие с IDE.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
-## Requirements
+## Использование
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+После установки плагина выполните следующие шаги, чтобы увидеть сообщение "Hello, World!" в консоли IDE:
+1. Откройте консоль.
+2. Выполните команду !!!КРАСАВЧИК!!! (или используйте доступ к плагину через меню или горячие клавиши, если таковые настроены).
+3. В консоли IDE должно появиться сообщение "!!!КРАСАВИЧК!!!".
 
-## Extension Settings
+## Архитектура
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+Данный плагин разработан на основе API выбранной IDE, поддерживающего интеграцию сторонних инструментов. Основные компоненты плагина включают:
 
-For example:
+- Точка входа плагина: Определяет основной класс, отвечающий за инициализацию и завершение работы плагина.
+- Функциональность вывода сообщения: Метод, который выполняется при запуске плагина и выводит "!!!КРАСАВИЧК!!!" в консоль.
+  
+Процесс интеграции плагина с IDE включает инициализацию точек входа плагина через API IDE, что позволяет подключать сторонние инструменты.
 
-This extension contributes the following settings:
+## Требования
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+- Версия IDE: Убедитесь, что используемая версия поддерживает плагины.
+- JDK версии 11+
